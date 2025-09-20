@@ -1,0 +1,18 @@
+{
+  "name": "mini-replit-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "node-fetch": "^3.4.1",
+    "tmp": "^0.2.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
