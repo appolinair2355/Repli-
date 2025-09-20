@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: mini-replit
+    env: node
+    plan: free
+    buildCommand: |
+      cd backend && npm install
+      cd ../frontend && npm install && npm run build
+    startCommand: |
+      cd backend && node server.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+    autoDeploy: true
